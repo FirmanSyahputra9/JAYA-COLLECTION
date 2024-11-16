@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark">
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light sticky-top bord">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">JAYA COLLECTION</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Other
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+              <li><a class="dropdown-item" href="gallery.html">Gellery</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="sosmed.html">Sosmed</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" onsubmit="handleSearch(event)">
+          <input class="form-control me-2 text-bg-light" type="search" placeholder="Search" aria-label="Search"
+            id="searchInput">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Grid cards start-->
+  <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5 g-4 bg-dark" style="margin-left: 1vh;margin-right: 1vh;">
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/sneakers/flatform_monogram_canvas.png" class="card-img-top" alt="Flatform Monogram Canvas">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">FLATFORM MONOGRAM CANVAS</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 1.500.000
+            </p>
+            <p class="card-text description">Sepatu sneakers dengan desain monogram canvas yang stylish dan nyaman untuk
+              digunakan sehari-hari.</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/formal/tan_03_volonta.png" class="card-img-top" alt="Tan 03 Volonta">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">TAN 03 VOLONTA</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 2.750.000
+            </p>
+            <p class="card-text description">Sepatu formal kulit berkualitas dengan desain klasik yang elegan, sempurna
+              untuk acara bisnis.</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/formal/pantofel_cavallero_magno.png" class="card-img-top" alt="Pantofel Cavallero Magno">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">PANTOFEL CAVALLERO MAGNO</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 2.250.000
+            </p>
+            <p class="card-text description">Pantofel formal dengan desain modern dan kenyamanan maksimal untuk
+              aktivitas harian.</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/sneakers/veslexth_slip_on.png" class="card-img-top" alt="Veslexth Slip-On">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">VESLEXTH SLIP-ON</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 1.200.000
+            </p>
+            <p class="card-text description">Slip-on sneakers dengan desain minimalis dan nyaman untuk segala aktivitas
+              kasual.</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/formal/loafers_gabine_leather.png" class="card-img-top" alt="Loafers Gabine Leather">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">LOAFERS GABINE LEATHER</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 2.500.000
+            </p>
+            <p class="card-text description">Loafers kulit premium dengan desain klasik dan material berkualitas tinggi
+              untuk kenyamanan sepanjang hari.</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/sneakers/cavallero_tommaso.png" class="card-img-top" alt="Cavallero Tommaso">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">CAVALLERO TOMMASO</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 2.000.000
+            </p>
+            <p class="card-text description">Sneakers stylish dengan desain kontemporer dan kenyamanan maksimal.</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/formal/joey_footwear.png" class="card-img-top" alt="Joey Footwear">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">JOEY FOOTWEAR</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 2.100.000
+            </p>
+            <p class="card-text description">Sepatu kulit premium dengan desain elegan dan cocok untuk gaya formal
+              maupun semi-formal.</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/olahraga/mills_ultras_clasica_denim.png" class="card-img-top" alt="Mills Ultras Clasica Denim">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">MILLS ULTRAS CLASICA DENIM</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 1.400.000
+            </p>
+            <p class="card-text description">Sepatu olahraga dengan material denim yang stylish, ringan, dan nyaman
+              digunakan untuk aktivitas sehari-hari.</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/sneakers/cavallero_vico.png" class="card-img-top" alt="Sepatu Cavallero Vico">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">SEPATU CAVALLERO VICO</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 1.800.000
+            </p>
+            <p class="card-text description">Sneakers casual dengan desain modern dan bahan yang breathable untuk
+              kenyamanan maksimal.</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/formal/gaincarlo.png" class="card-img-top" alt="Gaincarlo">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">GAINCARLO</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 2.650.000
+            </p>
+            <p class="card-text description">Sepatu formal dengan bahan kulit premium dan desain yang sangat elegan,
+              cocok untuk acara-acara formal.</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+    <div class="card h-100" aria-hidden="true">
+      <img src="ass/place_holder.png" class="card-img-top" alt="...">
+      <div class="card-body d-flex flex-column">
+        <div>
+          <h5 class="card-title line-clamp placeholder-glow">
+            <span class="placeholder col-6"></span>
+          </h5>
+          <p class="card-text price placeholder-glow" 
+            style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="placeholder col-7"></span>
+          </p>
+          <p class="card-text description placeholder-glow">
+            <span class="placeholder col-12"></span>
+            <span class="placeholder col-12"></span></p>
+        </div>
+        <div class="mt-auto">
+          <div class="d-grid gap-2">
+        <button class="btn btn-primary disabled placeholder" type="button" ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+  <!-- Grid cards end -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+      document.querySelectorAll('.btn-primary').forEach(button => {
+        button.onclick = function () {
+          const card = this.closest('.card');
+          const title = encodeURIComponent(card.querySelector('.card-title').textContent);
+          const price = encodeURIComponent(card.querySelector('.price').textContent);
+          const description = encodeURIComponent(card.querySelector('.description').textContent);
+          const image = encodeURIComponent(card.querySelector('img').src);
+  
+          window.location.href = `payment.html?title=${title}&price=${price}&description=${description}&image=${image}`;
+        };
+      });
+
+      function handleSearch(event) {
+      event.preventDefault();
+      const searchQuery = document.getElementById('searchInput').value.trim();
+      if (searchQuery) {
+        window.location.href = `hasil_pencarian.html?q=${encodeURIComponent(searchQuery)}`;
+      }
+    }
+    </script>
+</body>
+<footer style="margin-top: 3vh;">
+  <!-- Pagination start -->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="index_2.html">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+      <li class="page-item"><a class="page-link" href="index_2.html">2</a></li>
+      <li class="page-item disabled"><a class="page-link" href="index_3.html">3</a></li>
+      <li class="page-item">
+        <a class="page-link disabled" href="index_3.html">Next</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Pagination end -->
+
+</footer>
+
+</html>

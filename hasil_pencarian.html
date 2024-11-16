@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - JAYA COLLECTION</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">JAYA COLLECTION</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                            <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="sosmed.html">Sosmed</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search" id="searchForm">
+                    <input class="form-control me-2 text-bg-light" type="search" placeholder="Search"
+                        aria-label="Search" id="searchInput">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container mt-4">
+        <h2 class="text-light mb-4">Search Results for: <span id="searchQuery"></span></h2>
+        <div class="row row-cols-2 row-cols-md-4 g-4" id="searchResults">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const allProducts = [
+            {
+                title: "Louis Vuitton Nike X Air Force 1 Sneakers",
+                price: "Rp 99.999.999",
+                description: "The colour/s shown may differ from the actual colour/s due to individual's screen settings...",
+                image: "ass/sneakers/nike_x_airforce_1.png"
+            },
+            {
+                title: "Sepatu Slip On Santai Wanita Bahan Canvas A3051",
+                price: "Rp 450.000",
+                description: "Berasa punya sepatu, tapi bentuk nya sandal. Yuppp ini Dia si Sepatu Slip On Wanita...",
+                image: "ass/sneakers/sepatu_slip_on.png"
+            },
+            {
+                title: "Decathlon Kalenji Sepatu Lari Pria Active Grip Hijau - 8559113",
+                price: "Rp 790.000",
+                description: "Sepatu lari pria yang ringan dengan bantalan untuk berlari hingga sejauh 10 km...",
+                image: "ass/olahraga/jogging_1.png"
+            },
+            {
+                title: "EVANGELION x NEW ROCK [SHINJI] - TITIP JEPANG",
+                price: "Rp 10.999.000",
+                description: "The second collaboration item of Evangelion from QOOZA...",
+                image: "ass/olahraga/evangelion_newRock.png"
+            },
+            {
+                title: "Puma Basket Classic XXI-43",
+                price: "Rp 1.499.000",
+                description: "Klasik sejati itu abadi – dan gaya abadi dari siluet Basket potongan rendah adalah intinya. Pertama muncul di tahun 1970-an, rancangan ini telah diterjemahkan ulang untuk abad 21 dan musim ini muncul dengan tampilan kulit penuh yang bersih.",
+                image: "ass/olahraga/puma_basket_xxi_43.png"
+            },
+            {
+                title: "Sepatu Boots Sidi Cross Fire 3 Srs Limited Edition Jorge Prado",
+                price: "Rp 7.000.000",
+                description: "PROTEKSI TAMBAHAN AMAN DAN NYAMAN PADA TULANG KERING DAN ADA ENGSEL AGAR PERGERAKAN KAKI LEBIH LELUASA KETIKA OFFROAD",
+                image: "ass/boot/sidi_cross_fire_3_orange.png"
+            },
+            {
+                title: "SEPATU GAERNE SG12 LIMITED EDITION 2021",
+                price: "Rp 7.000.000",
+                description: "Sepatu Gaerne SG12 Limited Edition 2021 adalah pilihan ideal bagi penggemar motorcross dan off-road. Dirancang dengan teknologi canggih dan bahan premium, sepatu ini memberikan perlindungan maksimal, kenyamanan, dan daya tahan tinggi. Dengan desain eksklusif dan edisi terbatas, SG12 cocok untuk para rider yang menginginkan performa dan gaya terbaik di setiap petualangan.",
+                image: "ass/boot/gaerne_sg12_2021.png"
+            },
+            {
+                title: "Sepatu Badminton Victor p9200 New Limited Edition",
+                price: "Rp 4.500.000",
+                description: "Sepatu badminton Victor P9200 Limited Edition hadir dengan desain eksklusif dan teknologi canggih untuk memberikan kenyamanan serta stabilitas optimal saat bermain. Dilengkapi dengan outsole yang antiselip, teknologi penyerap goncangan, dan bahan ringan, sepatu ini dirancang untuk meningkatkan performa di lapangan.",
+                image: "ass/olahraga/victor_p9200.png"
+            },
+            {
+                title: "ADIDAS ULTRABOOST 21 GZ6073 CINA",
+                price: "Rp 4.450.220",
+                description: "Hadir dengan desain spesial untuk merayakan Tahun Baru Cina. Sepatu edisi terbatas ini menggabungkan teknologi Ultraboost yang nyaman dengan aksen hitam elegan dan detil unik. Terinspirasi oleh tradisi dan budaya Tiongkok, sepatu ini menawarkan performa luar biasa dan gaya yang eksklusif.",
+                image: "ass/olahraga/ultraboost_lunar_gz6073.png"
+            },
+            {
+                title: "FLATFORM MONOGRAM CANVAS",
+                price: "Rp 1.500.000",
+                description: "Sepatu sneakers dengan desain monogram canvas yang stylish dan nyaman untuk digunakan sehari-hari.",
+                image: "ass/sneakers/flatform_monogram_canvas.png"
+            },
+            {
+                title: "TAN 03 VOLONTA",
+                price: "Rp 2.750.000",
+                description: "Sepatu formal kulit berkualitas dengan desain klasik yang elegan, sempurna untuk acara bisnis.",
+                image: "ass/formal/tan_03_volonta.png"
+            },
+            {
+                title: "PANTOFEL CAVALLERO MAGNO",
+                price: "Rp 2.250.000",
+                description: "Pantofel formal dengan desain modern dan kenyamanan maksimal untuk aktivitas harian.",
+                image: "ass/formal/pantofel_cavallero_magno.png"
+            },
+            {
+                title: "VESLEXTH SLIP-ON",
+                price: "Rp 1.200.000",
+                description: "Slip-on sneakers dengan desain minimalis dan nyaman untuk segala aktivitas kasual.",
+                image: "ass/sneakers/veslexth_slip_on.png"
+            },
+            {
+                title: "LOAFERS GABINE LEATHER",
+                price: "Rp 2.500.000",
+                description: "Loafers kulit premium dengan desain klasik dan material berkualitas tinggi untuk kenyamanan sepanjang hari.",
+                image: "ass/formal/loafers_gabine_leather.png"
+            },
+            {
+                title: "CAVALLERO TOMMASO",
+                price: "Rp 2.000.000",
+                description: "Sneakers stylish dengan desain kontemporer dan kenyamanan maksimal.",
+                image: "ass/sneakers/cavallero_tommaso.png"
+            },
+            {
+                title: "JOEY FOOTWEAR",
+                price: "Rp 2.100.000",
+                description: "Sepatu kulit premium dengan desain elegan dan cocok untuk gaya formal maupun semi-formal.",
+                image: "ass/formal/joey_footwear.png"
+            },
+            {
+                title: "MILLS ULTRAS CLASICA DENIM",
+                price: "Rp 1.400.000",
+                description: "Sepatu olahraga dengan material denim yang stylish, ringan, dan nyaman digunakan untuk aktivitas sehari-hari.",
+                image: "ass/olahraga/mills_ultras_clasica_denim.png"
+            },
+            {
+                title: "SEPATU CAVALLERO VICO",
+                price: "Rp 1.800.000",
+                description: "Sneakers casual dengan desain modern dan bahan yang breathable untuk kenyamanan maksimal.",
+                image: "ass/sneakers/cavallero_vico.png"
+            },
+            {
+                title: "GAINCARLO",
+                price: "Rp 2.650.000",
+                description: "Sepatu formal dengan bahan kulit premium dan desain yang sangat elegan, cocok untuk acara-acara formal.",
+                image: "ass/formal/gaincarlo.png"
+            },
+            {
+                title: "PLACEHOLDER",
+                price: "Tunggu Sebentar",
+                description: "Sedang memuat data...",
+                image: "ass/place_holder.png"
+            }
+        ];
+
+        // Search Start
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchQuery = urlParams.get('q');
+
+        document.getElementById('searchQuery').textContent = searchQuery || '';
+
+        function displayResults(query) {
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = '';
+
+            const filteredProducts = allProducts.filter(product =>
+                product.title.toLowerCase().includes(query.toLowerCase()) ||
+                product.description.toLowerCase().includes(query.toLowerCase())
+            );
+
+            if (filteredProducts.length === 0) {
+                resultsContainer.innerHTML = '<div class="col-12 text-light">No results found.</div>';
+                return;
+            }
+
+            filteredProducts.forEach(product => {
+                const productCard = `
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="${product.image}" class="card-img-top" alt="${product.title}">
+                            <div class="card-body d-flex flex-column">
+                                <div>
+                                    <h5 class="card-title line-clamp">${product.title}</h5>
+                                    <p class="card-text price" style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${product.price}</p>
+                                    <p class="card-text description">${product.description}</p>
+                                </div>
+                                <div class="mt-auto">
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-primary" type="button">Beli</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                resultsContainer.innerHTML += productCard;
+            });
+
+            document.querySelectorAll('.btn-primary').forEach(button => {
+                button.onclick = function () {
+                    const card = this.closest('.card');
+                    const title = encodeURIComponent(card.querySelector('.card-title').textContent);
+                    const price = encodeURIComponent(card.querySelector('.price').textContent);
+                    const description = encodeURIComponent(card.querySelector('.description').textContent);
+                    const image = encodeURIComponent(card.querySelector('img').src);
+
+                    window.location.href = `payment.html?title=${title}&price=${price}&description=${description}&image=${image}`;
+                };
+            });
+        }
+        if (searchQuery) {
+            displayResults(searchQuery);
+        }
+
+        document.getElementById('searchForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const newQuery = document.getElementById('searchInput').value.trim();
+            if (newQuery) {
+                window.location.href = `hasil_pencarian.html?q=${encodeURIComponent(newQuery)}`;
+            }
+        });
+        // Search End
+    </script>
+</body>
+
+</html>

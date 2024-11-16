@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark">
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light sticky-top bord">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">JAYA COLLECTION</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Other
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+              <li><a class="dropdown-item" href="gallery.html">Gellery</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="sosmed.html">Sosmed</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" onsubmit="handleSearch(event)">
+          <input class="form-control me-2 text-bg-light" type="search" placeholder="Search" aria-label="Search"
+            id="searchInput">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Grid cards start-->
+  <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5 g-4 bg-dark" style="margin-left: 1vh;margin-right: 1vh;">
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/formal/low_ankle_tiger_black.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">Low Ankle Hover Series 01 x Debby Dbay - Tiger Black - Men</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 899.000
+            </p>
+            <p class="card-text description">Sepatu Gio Cardin Low Ankle Hover - Series 01, pertama kali diperkenalkan
+              pada tahun 2019 dan telah menjadi bagian dari barang essentials. Kolaborasi original dengan Debby Dbay
+              pada tahun 2021 mengangkat isu : Endangered Animals. Dilukis menggunakan cat Angelus leather paint dan
+              tambahan efek yang unik pada setiap warna sepatu. Penggabungan style yang minimalis dan sentuhan detail
+              pada lukisan pada bagian samping sepatu membuat sepatu kolaborasi yang satu ini cocok untuk tampil trendy,
+              yet minimalist.</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/olahraga/puma_basket_xxi_43.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">Puma Basket Classic XXI-43</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 1.499.000
+            </p>
+            <p class="card-text description">Klasik sejati itu abadi – dan gaya abadi dari siluet Basket potongan rendah
+              adalah intinya. Pertama muncul di tahun 1970-an, rancangan ini telah diterjemahkan ulang untuk abad 21 dan
+              musim ini muncul dengan tampilan kulit penuh yang bersih.</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/boot/sidi_cross_fire_3_orange.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">
+              Sepatu Boots Sidi Cross Fire 3 Srs Limited Edition Jorge Prado
+            </h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 7.000.000
+            </p>
+            <p class="card-text description">PROTEKSI TAMBAHAN AMAN DAN NYAMAN PADA TULANG KERING DAN ADA ENGSEL AGAR
+              PERGERAKAN KAKI LEBIH LELUASA KETIKA OFFROAD</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/boot/gaerne_sg12_2021.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">
+              SEPATU GAERNE SG12 LIMITED EDITION 2021
+            </h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 7.000.000
+            </p>
+            <p class="card-text description">Sepatu Gaerne SG12 Limited Edition 2021 adalah pilihan ideal bagi penggemar
+              motorcross dan off-road. Dirancang dengan teknologi canggih dan bahan premium, sepatu ini memberikan
+              perlindungan maksimal, kenyamanan, dan daya tahan tinggi. Dengan desain eksklusif dan edisi terbatas, SG12
+              cocok untuk para rider yang menginginkan performa dan gaya terbaik di setiap petualangan.</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/olahraga/victor_p9200.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">
+              Sepatu Badminton Victor p9200 New Limited Edition
+            </h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 4.500.000
+            </p>
+            <p class="card-text description">Sepatu badminton Victor P9200 Limited Edition hadir dengan desain eksklusif
+              dan teknologi canggih untuk memberikan kenyamanan serta stabilitas optimal saat bermain. Dilengkapi dengan
+              outsole yang antiselip, teknologi penyerap goncangan, dan bahan ringan, sepatu ini dirancang untuk
+              meningkatkan performa di lapangan.</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/olahraga/ultraboost_lunar_gz6073.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">
+              ADIDAS ULTRABOOST 21 GZ6073 CINA
+            </h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 4.450.220
+            </p>
+            <p class="card-text description">Hadir dengan desain spesial untuk merayakan Tahun Baru Cina. Sepatu edisi
+              terbatas ini menggabungkan teknologi Ultraboost yang nyaman dengan aksen hitam elegan dan detil unik.
+              Terinspirasi oleh tradisi dan budaya Tiongkok, sepatu ini menawarkan performa luar biasa dan gaya yang
+              eksklusif.</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/olahraga/yonex_shb_sc6ld.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">
+              YONEX SHB SC6LD CR Special Lin Dan
+            </h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 2.299.000
+            </p>
+            <p class="card-text description">
+              Yonex SHB SC6LD CR Special Lin Dan adalah sepatu badminton edisi spesial yang terinspirasi oleh legenda
+              bulu tangkis, Lin Dan. Didesain untuk memberikan kenyamanan dan kestabilan maksimal, sepatu ini dilengkapi
+              dengan teknologi Power Cushion untuk peredaman goncangan, serta outsole yang anti-slip untuk akselerasi
+              cepat dan gerakan gesit di lapangan. Desainnya yang stylish dan eksklusif cocok untuk pemain profesional
+              maupun penggemar.</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/olahraga/panarybody_qn237.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">
+              Sepatu Olahraga Pria Trendy QN237
+            </h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 4.321.000
+            </p>
+            <p class="card-text description">Sepatu olahraga pria Trendy QN237 menawarkan kombinasi gaya dan kenyamanan.
+              Didesain dengan bahan berkualitas tinggi, sepatu ini memberikan dukungan maksimal untuk aktivitas
+              sehari-hari maupun olahraga ringan. Dengan desain modern dan sol anti-slip, QN237 siap mendukung performa
+              dan penampilan Anda.</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/sneakers/new_balance_2002r.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">
+              New Balance 2002R Men's
+            </h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 4.321.000
+            </p>
+            <p class="card-text description">New Balance 2002R Men's adalah sepatu sneaker pria yang menggabungkan
+              desain klasik dengan teknologi modern. Dikenal karena kenyamanan superior, model ini menggunakan bahan
+              berkualitas tinggi dan teknologi ABZORB untuk penyerap goncangan. Dengan tampilan retro yang stylish dan
+              daya tahan yang luar biasa, 2002R cocok untuk aktivitas sehari-hari maupun gaya kasual.</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/sneakers/gc-p7_andres_sense.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">Sepatu Sneakers Hitam PRIA GC-P7 Andres Sense</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp Rp185.000
+            </p>
+            <p class="card-text description">
+              PROMO koleksi Sepatu Sneaker Pria yang tepat untuk kenyamanan dan style Anda.
+              "Dengan kualitas bahan yang sekelas premium ,detail nya pun tidak bisa di remehkan dengan harga semurah
+              ini ,dapatkan stok-stok terakhir kami sebelum anda kehabisan ."</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/olahraga/kiprun_jogflow_190.1.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">Kiprun Jogflow 190.1 Sepatu Lari</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 500.000
+            </p>
+            <p class="card-text description">
+              Sepatu ini memiliki bantalan lembut yang secara efektif meredam benturan, memberikan rasa ringan dan
+              perlindungan saat berlari.
+              Tim desain kami mengembangkan sepatu lari pria yang ringan dengan bantalan untuk berlari hingga sejauh 20
+              km per minggu."</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/olahraga/adidas_duramo_sl_42.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">Adidas Duramo SL -42</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 500.000
+            </p>
+            <p class="card-text description">
+              Adidas Duramo SL-42 adalah sepatu olahraga ringan yang dirancang untuk kenyamanan dan performa optimal.
+              Dengan teknologi Cloudfoam di midsole, sepatu ini menawarkan bantalan ekstra untuk setiap langkah. Desain
+              minimalis dan modern cocok untuk berbagai aktivitas, dari lari hingga penggunaan sehari-hari,
+              menjadikannya pilihan praktis dan stylish."</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/olahraga/mills_treximo_saga_9100308.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">Mills Treximo Saga 9100308</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 500.000
+            </p>
+            <p class="card-text description">
+              TETAP PRODUKTIF BERLARI SAAT CUACA PANAS! MILLS Treximo Saga datang dengan material translucent yang mampu
+              menjaga stabilitas udara di sekitar kaki. Membuatmu tak lagi ragu berolahraga di kala cuaca panas.
+              DIRANCANG UNTUK:Aktivitas berlari lebih cepat, sehingga membutuhkansepatu yang ringan. Sepatu ini
+              digunakan untuk berlaridi permukaan datar dengan jarak 5-10K. TRANSLUCENT mesh upper membuat Anda lebih
+              siapuntuk berlari di musim kemarau/panas. MILLS SEAMPRESS SKIN adalah teknologi yang memungkinanmembuat
+              konstruksi / dekorasi sepatu tanpa jahitan. berbahandasar TPU yang kuat dan ringan. sehingga dapat
+              memberikankonstruksi tambahan pada upper sepatu namun tidakmempengaruhi bobot dan elastisitasnya. MILLS
+              APTIVE FOAM adalah teknologi outsole/midsole berbahandasar campuran biji EVA, okisgen dan rubber yang
+              dibuat denganmetode injection phylon. menghasilkan midsole yang kenyal dandapat meredam getaran dengan
+              baik. Selain itu sole menjadiRingan, sangat fleksible dan memiliki elastisitas tinggi."</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/olahraga/nike_juniper_trail_3.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">NIKE Men Running Juniper Trail 3</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 500.000
+            </p>
+            <p class="card-text description">
+              Nike Men Running Juniper Trail 3 adalah sepatu lari pria yang dirancang khusus untuk medan off-road.
+              Dengan outsole karet yang tahan lama dan pola traksi yang optimal, sepatu ini memberikan cengkeraman yang
+              kuat di berbagai permukaan. Dilengkapi dengan bantalan yang responsif dan konstruksi ringan, Juniper Trail
+              3 memberikan kenyamanan dan stabilitas saat berlari di alam terbuka. Desainnya yang stylish dan fungsional
+              menjadikannya pilihan ideal untuk petualangan luar ruangan."</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/boot/gaerne_sg22.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">GAERNE SG22 PURPPLE WITH LIGHT BLUE SEPATU CROSS ENDURO</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 11.500.000
+            </p>
+            <p class="card-text description">
+              Nike Men Running Juniper Trail 3 adalah sepatu lari pria yang dirancang khusus untuk medan off-road.
+              Dengan outsole karet yang tahan lama dan pola traksi yang optimal, sepatu ini memberikan cengkeraman yang
+              kuat di berbagai permukaan. Dilengkapi dengan bantalan yang responsif dan konstruksi ringan, Juniper Trail
+              3 memberikan kenyamanan dan stabilitas saat berlari di alam terbuka. Desainnya yang stylish dan fungsional
+              menjadikannya pilihan ideal untuk petualangan luar ruangan."</p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/olahraga/lining_blade_df-01_pro_ayat005_7.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">GAERNE SG22 PURPPLE WITH LIGHT BLUE SEPATU CROSS ENDURO</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 2.999.800
+            </p>
+            <p class="card-text description">
+              Blade DF PRO AYAT005-7 Limited Edition is lightweight high-rebound professional badminton shoes, using
+              simple, casual colors. The upper is made of comfortable, pleasant and soft material, providing a good foot
+              feel. Li Ning brand logo design, meticulous workmanship, highlighting the charm of the brand. The
+              anti-collision design of the toe cap helps reduce scratches or bumps on your toes and pampers every step."
+            </p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/formal/emery_1_off.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">EMERY 1 OFF</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 2.159.100
+            </p>
+            <p class="card-text description">
+              Kenyamanan dan gaya dalam satu langkah. Sepatu kulit asli dengan desain khas Itali dan outsole karet yang
+              berkualitas tinggi.Detail- Genuine finest leather- Cloud Tech Insole- Rubber outsole."
+            </p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/sneakers/balenciaga_triple_s_sneakers.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">Balenciaga Triple S Sneakers</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 16.324.900
+            </p>
+            <p class="card-text description">
+              Balenciaga Triple S Sneakers adalah sepatu ikonik yang mengusung desain chunky dan platform yang mencolok.
+              Dikenal dengan sol tebal tiga lapis, sepatu ini menawarkan kenyamanan dan gaya urban yang unik. Dibuat
+              dengan bahan berkualitas tinggi, Triple S menggabungkan estetika streetwear dengan kecanggihan desain,
+              menjadikannya pilihan populer bagi para penggemar mode yang ingin tampil beda."
+            </p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/formal/volve_wave_dark_brown.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">VOLVE WAVE DARK BROWN</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 2.350.000
+            </p>
+            <p class="card-text description">
+              Desain elegan dengan sentuhan modern. Sepatu formal kulit terbaik dengan detail handcraft yang sempurna.
+            </p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="ass/sneakers/cavallero_yosef_black.png" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
+          <div>
+            <h5 class="card-title line-clamp">CAVALLERO YOSEF BLACK</h5>
+            <p class="card-text price"
+              style="font-size: medium; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Rp 1.899.000
+            </p>
+            <p class="card-text description">
+              Sepatu sneakers dengan gaya kasual yang nyaman. Terbuat dari bahan berkualitas tinggi dan outsole
+              anti-slip.
+            </p>
+          </div>
+          <div class="mt-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Grid cards end -->
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script>
+    document.querySelectorAll('.btn-primary').forEach(button => {
+      button.onclick = function () {
+        const card = this.closest('.card');
+        const title = encodeURIComponent(card.querySelector('.card-title').textContent);
+        const price = encodeURIComponent(card.querySelector('.price').textContent);
+        const description = encodeURIComponent(card.querySelector('.description').textContent);
+        const image = encodeURIComponent(card.querySelector('img').src);
+
+        window.location.href = `payment.html?title=${title}&price=${price}&description=${description}&image=${image}`;
+      };
+    });
+
+
+    function handleSearch(event) {
+      event.preventDefault();
+      const searchQuery = document.getElementById('searchInput').value.trim();
+      if (searchQuery) {
+        window.location.href = `hasil_pencarian.html?q=${encodeURIComponent(searchQuery)}`;
+      }
+    }
+  </script>
+</body>
+<footer style="margin-top: 3vh;">
+  <!-- Pagination start -->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="index.html">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+      <li class="page-item disabled"><a class="page-link" href="index_2.html">2</a></li>
+      <li class="page-item"><a class="page-link" href="index_3.html">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="index_3.html">Next</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Pagination end -->
+
+</footer>
+
+</html>
